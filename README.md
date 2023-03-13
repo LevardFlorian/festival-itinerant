@@ -5,7 +5,7 @@ logo : chapiteau a reprendre sur l'affiche
 pour le header reprendre les couleurs du logo rouge avec les étoiles
 pour le fond prendre une photo de l'interieur du chapiteau
 menu sur les paneaux
-plateform ovh en 100go (festival-itinérant.fr)
+plateform ovh en 100go (festival-itinerant.fr)
 12 villes à 10jours
 12 artistes solo
 liste de galerie par années plutot que par ville et par date

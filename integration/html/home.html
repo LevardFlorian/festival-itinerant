@@ -8,6 +8,10 @@
     <script src="https://kit.fontawesome.com/8a7426147f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/logo-festival.webp" type="image/x-icon">
     <title>Festival itinérant</title>
 </head>
 
@@ -15,61 +19,82 @@
     <header class="header">
         <div class="header__nav">
             <a class="header__nav__logo" href="./home.html"><img src="../assets/logo-festival.webp" alt=""></a>
-            <h1 class="header__nav__title">Festival itinérant</h1>
+            <p class="header__slogan">C'est chez vous qu'il passe !</p>
             <a href="./menu.html"><i class="header__nav__icon fa-solid fa-bars"></i></a>
         </div>
         <div class="header__nav__link">
-            <a class="main-menu__item" href="./home.html">Accueil</a>
-            <a class="main-menu__item" href="./galerie.html">Galerie</a>
-            <a class="main-menu__item" href="./artiste.html">Artistes</a>
-            <a class="main-menu__item" href="./calendrier.html">Calendrier</a>
-            <a class="main-menu__item" href="./avis.html">Avis</a>                <a class="main-menu__item" href="">Newsletter</a>
+            <a class="header__nav__link__item" href="./home.html">Accueil</a>
+                <a class="header__nav__link__item" href="./galerie.html">Galerie</a>
+                <a class="header__nav__link__item" href="./artiste.html">Artistes</a>
+                <a class="header__nav__link__item" href="./calendrier.html">Calendrier</a>
+                <a class="header__nav__link__item" href="./avis.html">Avis</a>
+                <a class="header__nav__link__item" href="./spectacle.html">Spectacles</a>
+                <a class="header__nav__link__item" href="./compagnie.html">Compagnie</a>
+                <a class="header__nav__link__item" href="">Espace pro</a>
         </div>
-        <p class="header__slogan">slogan</p>
     </header>
 
     <main class="main">
         <div class="main__description">
             <section class="main__description__content">
-            <h2>Qui sommes nous?</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis ex soluta qui excepturi quasi adipisci
-                maxime, quos repudiandae delectus? Et quidem consequatur cumque eum iure hic! Eum quia ducimus sed!</p>
+                <h2>Qui sommes nous?</h2>
+                <p>Un chapiteau sillonne les routes de nos campagnes et fait plusieurs escales dans différentes
+                    communes. A chaque escale, une semaine de spectacles, d'initiations artistiques, de rencontres,
+                    d’échanges et de valorisation des talents locaux. Venez-voir les comédiens, les magiciens qui
+                    arrivent… <br>
+                    L’idée est donc de proposer un projet culturel aux communes rurales qui n’ont ni les moyens ni les
+                    structures pour programmer des spectacles de proximité. La philosophie du projet consiste aussi à
+                    impliquer les habitants dans son organisation et sa programmation.
+                </p>
             </section>
             <section class="main__description__carrousel">
                 <h2>Dernières photos du festival</h2>
-                <div class="carrousel">
-                    <a href="javascript:void(0)"><i class="fa-solid fa-chevron-left"></i></a>
-                    <img class="carrousel__img" src="../assets/pexels-kindel-media-7148673.jpg" alt="">
-                    <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a>
+                <div class="slider">
+                    <!-- ici, on veut ajouter nos images -->
+                    <button class="btn slider__btn" type="button" aria-label="Précédent">&lt;</button>
+                    <button class="btn slider__btn" type="button" aria-label="Suivant">&gt;</button>
                 </div>
                 <a class="link" href="./galerie.html">Voir notre galerie</a>
             </section>
+            <section class="main__description__comp">
+                <h2>Découvrez les compagnies porteuses de ce projet</h2>
+                <div class="compagnie">
+                    <a href="./compagnie.html"><img class="compagnie__img" src="../assets/compagnie/_logo belouga.svg" alt=""></a>
+                    <a href="./compagnie.html"><img class="compagnie__img" src="../assets/compagnie/_logo poly'sons.svg" alt=""></a>
+                    <a href="./compagnie.html"><img class="compagnie__img" src="../assets/compagnie/_logo chap rond fou.svg" alt=""></a>
+                </div>
+            </section>
         </div>
-        <section>
-            <h2>Artistes de la tournée 2023</h2>
-            <div class="carrousel">
-                <a href="javascript:void(0)"><i class="fa-solid fa-chevron-left"></i></a>
-                <img class="carrousel__img" src="../assets/pexels-kindel-media-7148673.jpg" alt="">
-                <a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a>
-            </div>
-            <a class="link" href="./artiste.html">Voir tous les artistes</a>
-        </section>
-        <section class="date">
-            <h2>Prochaines dates</h2>
-            <div class="date__card">
-                <p>Ville : du 01/01/2023 au 10/01/2023</p>
-                <a class="link" href="./programme.html">Programme</a>
-            </div>
-            <div class="date__card">
-                <p>Ville : du 01/01/2023 au 10/01/2023</p>
-                <a class="link" href="./programme.html">Programme</a>
-            </div>
-            <div class="date__card">
-                <p>Ville : du 01/01/2023 au 10/01/2023</p>
-                <a class="link" href="./programme.html">Programme</a>
-            </div>
-            <a class="link" href="./calendrier.html">Voir le calendrier</a>
-        </section>
+        <div class="prochain">
+            <section class="carrou">
+                <h2>Spectacles de la tournée 2023</h2>
+                <div class="carrousel">
+                    <!-- ici, on veut ajouter nos images -->
+                    <button class="btn carrousel__btn" type="button" aria-label="Précédent">&lt;</button>
+                    <button class="btn carrousel__btn" type="button" aria-label="Suivant">&gt;</button>
+                </div>
+                <a class="link" href="./spectacle.html">Voir tous les spectacles</a>
+            </section>
+            <section class="date">
+                <h2>Prochaines dates</h2>
+                <div class="date__card">
+                    <p>Ville : <br>
+                        du 01/01/2023 au 10/01/2023</p>
+                    <a class="link" href="./programme.html">Programme</a>
+                </div>
+                <div class="date__card">
+                    <p>Ville : <br>
+                        du 01/01/2023 au 10/01/2023</p>
+                    <a class="link" href="./programme.html">Programme</a>
+                </div>
+                <div class="date__card">
+                    <p>Ville : <br>
+                        du 01/01/2023 au 10/01/2023</p>
+                    <a class="link" href="./programme.html">Programme</a>
+                </div>
+                <a class="link" href="./calendrier.html">Voir le calendrier</a>
+            </section>
+        </div>
         <section>
             <h2>Avis des spectateurs</h2>
             <div class="avis">
@@ -87,7 +112,8 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque praesentium
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque
+                        praesentium
                         quam
                         quasi incidunt illum harum, quia quos velit, ullam debitis itaque. Cupiditate repellat,
                         reprehenderit
@@ -110,7 +136,8 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque praesentium
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque
+                        praesentium
                         quam
                         quasi incidunt illum harum, quia quos velit, ullam debitis itaque. Cupiditate repellat,
                         reprehenderit
@@ -133,7 +160,8 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque praesentium
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque
+                        praesentium
                         quam
                         quasi incidunt illum harum, quia quos velit, ullam debitis itaque. Cupiditate repellat,
                         reprehenderit
@@ -147,20 +175,33 @@
         </section>
     </main>
 
+    <aside class="newsletter">
+        <button class="newsletter__close btn" aria-label="Fermer" type="button">&Cross;</button>
+        <h2 class="newsletter__title">Suivez-nous</h2>
+        <form action="" method="post">
+            <input class="newsletter__field" type="email" required id="subscriber-email" placeholder="user@email.com"
+                aria-label="Votre email">
+            <button class="btn" type="submit">Valider</button>
+        </form>
+    </aside>
+
     <footer class="footer">
         <div class="footer__network">
-            <a class="footer__network__link" href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
-            <a class="footer__network__link" href="javascript:void(0)"><i class="fa-brands fa-facebook"></i></a>
-            <a class="footer__network__link" href="javascript:void(0)"><i class="fa-brands fa-tiktok"></i></a>
+            <a class="footer__network__link" href="https://www.facebook.com/profile.php?id=100072422051797"><i
+                    class="fa-brands fa-facebook"></i></a>
         </div>
         <div class="footer__nav">
             <a class="link" href="./contact.html">Contact</a>
-            <span> - </span>
             <a class="link" href="./partenaire.html">Partenaires</a>
-            <span> - </span>
             <a class="link" href="./mentions.html">Mentions légales</a>
+            <a class="link" id="newsletter" href="">Suivez-nous</a>
         </div>
     </footer>
+    <script src="../js/messages.js"></script>
+    <script src="../js/newsletter.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/carrousel.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
