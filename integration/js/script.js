@@ -5,6 +5,7 @@ const app = {
         slider.init();
         carrousel.init();
         newsletter.init();
+        menu.init();
     }
 };
 
