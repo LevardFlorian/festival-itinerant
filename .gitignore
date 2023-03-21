@@ -8,3 +8,5 @@ wp-config.php
 !/wp-content/themes
 /wp-content/plugins/*
 !/wp-content/plugins
+
+!/wp-content/themes/festival

@@ -1,0 +1,601 @@
+body {
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+.header {
+  background-image: url(../../assets/banniere-header.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:'Qwitcher Grypen', cursive ;
+  font-size: 2.3rem;
+  /* background-color: #BBCF0C; */
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav__logo {
+  width: 45%;
+}
+
+.header__nav__logo img {
+  width: 100%;
+}
+
+.header__nav__link {
+  display: none;
+}
+
+.header__slogan {
+  padding: 1rem;
+  text-align: center;
+}
+
+.header__nav__icon {
+  width: 90%;
+  color: black;
+}
+
+.main {
+  background-image: url(../../assets/20220923_154750\ \(3\).jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 750%;
+  color: white;
+  padding: 1rem;
+}
+
+section {
+  background-color: rgba(128, 128, 128, 0.7);
+  margin: 0.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+.link {
+  text-decoration: underline;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+.date__card {
+  padding: 0.5rem;
+  border: white solid 1px;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+.avis__card {
+  padding: 0.5rem;
+  border: white solid 1px;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+
+.avis__card__infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #BBCF0C;
+  font-weight: bold;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+}
+
+.slider__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.slider__img--current {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slider__btn {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  color: black;
+  background-color: #BBCF0C;
+}
+
+/* bonus slider nav */
+.slider__nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.slider__nav-item {
+  border: 0;
+  padding: 0;
+  margin: 0.5em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.carrousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20rem;
+}
+
+.carrousel__img {
+  position: absolute;
+  top: 0;
+  left: 19px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .3s;
+  width: 85%;
+}
+
+.carrousel__img--current {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carrousel__btn {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+  color: black;
+  background-color: #BBCF0C;
+}
+
+/* bonus carrousel nav */
+.carrousel__nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.carrousel__nav-item {
+  border: 0;
+  padding: 0;
+  margin: 0.5em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.newsletter {
+  position: fixed;
+  z-index: 9;
+  right:0;
+  bottom: 0;
+  background-color: #BBCF0C;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: var(--border-normal);
+  padding: 2rem;
+  width: 25em;
+  max-width: 100%;
+  display: none; 
+}
+
+
+.newsletter--on {
+  display: block;
+  animation: .3s 0s 1 pop;
+}
+
+
+.newsletter__title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.newsletter__field {
+  border: var(--border-normal);
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+.newsletter__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.galerie__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.7);
+  margin: 0.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 90%;
+}
+
+.galerie, .partenaire {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.galerie__img, .partenaire__img {
+  width: 45%;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.galerie__img:hover, .partenaire__img:hover {
+  transform: scale(1.5);
+}
+
+.spectacle__card, .compagnie__card, .artiste__card {
+  padding: 0.5rem;
+  border: white solid 1px;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  width: 90%;
+}
+
+.spectacle__card__infos__info {
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.compagnie {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.compagnie a {
+  width: 40%;
+  margin: 0.5rem;
+}
+
+.compagnie__img {
+  width: 100%;
+}
+
+.menu {
+  background-color: #BBCF0C;
+}
+
+.main-menu {
+  display: none;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.close-button {
+  cursor: pointer;
+  position: fixed;
+  font-size: 2rem;
+  z-index: 10;
+}
+
+.main-menu__list {
+  background-image: url(../../assets/panneaux\ bois.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+}
+
+.main-menu__item1 {
+  margin-top: 3.3rem;
+}
+
+.main-menu__item2 {
+  margin-top: 3rem;
+}
+
+.main-menu__item3 {
+  margin-top: 2.3rem;
+}
+
+.main-menu__item4 {
+  margin-top: 2.3rem;
+}
+
+.main-menu__item5 {
+  margin-top: 2.8rem;
+}
+
+.main-menu__item6 {
+  margin-top: 2.5rem;
+}
+
+.main-menu__item7 {
+  margin-top: 2.3rem;
+}
+
+.main-menu__item8 {
+  margin-top: 2.5rem;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.pagination__li {
+  background-color: #BBCF0C;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  color: black;
+}
+
+.avis-form__button {
+  background-color: #BBCF0C;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  color: black;
+  margin: 2rem;
+}
+
+.avis-form__input {
+  background-color: #BBCF0C;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  color: black;
+  width: 90%;
+}
+
+.contact-form__input {
+  background-color: #BBCF0C;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  color: black;
+  width: 90%;
+}
+
+.contact-form__button {
+  background-color: #BBCF0C;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  color: black;
+  margin: 2rem;
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  // & sert à répéter le sélecteur de la règle parente (ici ".top-bar")
+  // "&__logo" équivaut => ".top-bar__logo"
+  // on se sert de flex-grow pour fixer une proportion à utiliser pour chaque élément et conserver un alignement "rigide"
+  .top-bar__logo {
+      flex: 2;
+      font-family: "PT Sans Bold";
+      text-align: left;
+      text-transform: uppercase;
+  }
+
+  .top-bar__actions {
+      flex: 1;
+      text-align: center;
+
+      a {
+          text-decoration: none;
+      }
+  }
+
+  .top-bar__burger-button {
+      flex: 2;
+      text-align: right;
+
+        i {
+            cursor: pointer;
+        }
+  }
+
+  
+}
+
+@media screen and (min-width: 900px) {
+.main {
+  background-size: 140%;
+}
+
+  .header__nav__logo{
+      width: 25%;
+  }
+
+  .header__slogan {
+      font-size: 7rem;
+  }
+
+  .main__description {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .main__description__content {
+      width: 30%;
+  }
+
+  .main__description__comp {
+      width: 100%;
+  }
+
+  .compagnie a {
+      width: 15%;
+  }
+
+  .main__description__carrousel {
+      width: 60%;
+  }
+
+  .slider {
+      height: 30rem;
+  }
+
+  .prochain {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .carrou {
+      width: 25%;
+  }
+
+  .carrousel__img {
+     width: 55%;
+      margin-left: 4.5rem;
+  }
+
+  .date {
+      width: 60%;
+  }
+
+  .date__card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .galerie {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .galerie__card {
+      width: 48%;
+  }
+
+  .galerie__img {
+      width: 25%;
+  }
+
+  .compagnie__card {
+      width: 48%;
+  }
+
+  .compagnie__card__infos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .compagnie__card__infos__img {
+      width: 25%;
+  }
+
+  .spectacle {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .spectacle__card {
+      width: 29%;
+  }
+
+  .date {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .avis {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .avis__card {
+      width: 25%;
+  }
+}
+

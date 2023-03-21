@@ -1,0 +1,5 @@
+## Ce thème pourrait être extrait de ce projet particulier, dans l'idée
+# on place donc un gitignore qui lui est propre.
+/.parcel-cache
+/dist
+/node_modules
