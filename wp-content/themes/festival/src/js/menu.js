@@ -1,5 +1,3 @@
-console.log('menu.js chargé');
-
 const menu = {
   init: function() {
     //1. on selectionne le bouton
@@ -31,3 +29,5 @@ const menu = {
   }
 
 };
+
+document.addEventListener('DOMContentLoaded', menu.init);

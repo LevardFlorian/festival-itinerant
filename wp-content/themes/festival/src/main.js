@@ -1,3 +1,5 @@
+import 'reset-css';
+
 import './scss/main.scss';
 
 import './js/carrousel';

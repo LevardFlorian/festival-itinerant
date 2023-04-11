@@ -9,6 +9,11 @@ const slider = {
     currentPosition: 0,
 
     init: function(){
+          // on protège notre module : on fait en sorte de ne continuer que si on a bien un élément .carousel sur la page
+      if (document.querySelector('.slider') === null) {
+        // return ne revoie rien, mais nous permet de stopper l'exécution de la fonction
+        return;
+    }
         slider.generateSliderImages();
         slider.sliderImagesElements = document.querySelectorAll('.slider__img');    
         slider.sliderImagesNumber = slider.sliderImagesElements.length;
@@ -53,9 +58,12 @@ const slider = {
 
     generateSliderImages: function(){
         const sliderImages = [
-            'image1.webp',
-            'image2.webp',
-            'image3.webp'
+            'image5.webp',
+            'image8.webp',
+            'image11.webp',
+            'image16.webp',
+            'image19.webp',
+            'image23.webp',
         ];
         const slider = document.querySelector('.slider');
         for (const image of sliderImages) {

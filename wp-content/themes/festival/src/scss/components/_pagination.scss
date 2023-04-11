@@ -1,0 +1,13 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem;
+  
+  &__li {
+    background-color: #BBCF0C;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    color: black;
+  }
+}

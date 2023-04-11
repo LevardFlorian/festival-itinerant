@@ -9,6 +9,11 @@ const carrousel = {
     currentPosition: 0,
 
     init: function(){
+          // on protège notre module : on fait en sorte de ne continuer que si on a bien un élément .carousel sur la page
+      if (document.querySelector('.carrousel') === null) {
+        // return ne revoie rien, mais nous permet de stopper l'exécution de la fonction
+        return;
+    }
         carrousel.generateCarrouselImages();
         carrousel.carrouselImagesElements = document.querySelectorAll('.carrousel__img');    
         carrousel.carrouselImagesNumber = carrousel.carrouselImagesElements.length;

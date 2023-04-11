@@ -1,0 +1,51 @@
+.carrousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20rem;
+  
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 19px;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .3s;
+    width: 85%;
+  }
+  
+  &__img--current {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  &__btn {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    color: black;
+    background-color: #BBCF0C;
+  }
+  
+  /* bonus carrousel nav */
+  &__nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  &__nav-item {
+    border: 0;
+    padding: 0;
+    margin: 0.5em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: white;
+  }
+}

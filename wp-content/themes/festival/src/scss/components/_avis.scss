@@ -1,0 +1,30 @@
+.avis__card__infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  
+  &__card {
+    padding: 0.5rem;
+    border: white solid 1px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+  }
+}
+
+.avis-form__button {
+  background-color: #BBCF0C;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  color: black;
+  margin: 2rem;
+  
+  &__input {
+    background-color: #BBCF0C;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    color: black;
+    width: 90%;
+  }
+}

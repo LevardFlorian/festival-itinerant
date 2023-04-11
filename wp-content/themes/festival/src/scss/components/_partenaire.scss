@@ -1,0 +1,12 @@
+.partenaire {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  &__img {
+    width: 20%;
+    margin: auto;
+    padding: 0.5rem;
+  }
+}

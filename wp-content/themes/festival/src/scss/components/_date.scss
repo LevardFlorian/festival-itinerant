@@ -1,0 +1,16 @@
+.date__card {
+  padding: 0.5rem;
+  border: white solid 1px;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  &__card__item {
+    width: calc(100vh/3);
+    text-align: center;
+  }
+
+}

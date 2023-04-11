@@ -63,3 +63,57 @@ add_action( 'init', 'register_my_menus' );
 
 // on déclare que le thème autorise l'utilisation d'images mises en avant
 add_theme_support('post-thumbnails');
+
+// on se crée une fonction qui nous permet de récupérer la liste des articles pour la home
+if (!function_exists('festival_get_home_postlist')) :
+  function festival_get_home_postlist()
+  {
+      // on prépare une WP_Query qui va récupérer les 3 derniers articles
+      $args = [
+          'post_status' => 'publish',
+          'post_type' => 'post',
+          'posts_per_page' => 3 // on peut utiliser une valeur fixe ou laisser WP le gérer par défaut => configuré en backoffice
+      ];
+      $homePostsQuery = new WP_Query($args);
+  
+      // on renvoie la liste d'objets WP_Post récupérée
+      return $homePostsQuery->posts;
+  }
+  // end if exists festival_get_home_postlist
+  endif;
+
+  if (!function_exists('festival_get_postlist')) :
+    function festival_get_postlist()
+    {
+        // on prépare une WP_Query qui va récupérer les 3 derniers articles
+        $args = [
+            'post_status' => 'publish',
+            'post_type' => 'post',
+            'order' => 'DESC',
+            'order_by' => 'date'
+        ];
+        $PostsQuery = new WP_Query($args);
+    
+        // on renvoie la liste d'objets WP_Post récupérée
+        return $PostsQuery->posts;
+    }
+    // end if exists festival_get_postlist
+    endif;
+
+    if (!function_exists('festival_get_galerielist')) :
+        function festival_get_galerielist()
+        {
+            // on prépare une WP_Query qui va récupérer les 3 derniers articles
+            $args = [
+                'post_status' => 'publish',
+                'post_type' => '	gt3_gallery',
+                'order' => 'DESC',
+                'order_by' => 'post_title'
+            ];
+            $GaleriesQuery = new WP_Query($args);
+        
+            // on renvoie la liste d'objets WP_Post récupérée
+            return $GaleriesQuery->posts;
+        }
+        // end if exists festival_get_postlist
+        endif;

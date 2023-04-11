@@ -14,10 +14,20 @@
                     class="fa-brands fa-facebook"></i></a>
         </div>
         <div class="footer__nav">
-            <a class="link" href="./contact.html">Contact</a>
-            <a class="link" href="./partenaire.html">Partenaires</a>
-            <a class="link" href="./mentions.html">Mentions légales</a>
-            <a class="link" id="newsletter" href="">Suivez-nous</a>
+        <ul class="footer__links">
+        <?php 
+        
+        $menuLocations = get_nav_menu_locations();
+        $footerMenuId = $menuLocations['footer-menu'];
+        $menuItemList = wp_get_nav_menu_items($footerMenuId);
+        foreach ($menuItemList as $menuItem) :
+    ?>
+        <li class="footer__links__item"><a href="<?= $menuItem->url; ?>"><?= $menuItem->title; ?></a></li>
+    <?php 
+        endforeach; 
+    ?>
+        </ul>
+            <a class="footer__link" id="newsletter" href="">Suivez-nous</a>
         </div>
     </footer>
     <script src="<?= get_theme_file_uri() ?>/src/js/script.js"></script>
