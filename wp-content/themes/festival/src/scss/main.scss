@@ -1,151 +1,30 @@
-@media screen and (min-width: 900px) {
-.main {
-  background-size: 140%;
-}
+/**
+main.scss va servir à importer les différents fichiers de notre projet
+un fichier qui est destiné à être importé est préfixé par un "_"
+attention au @ devant import en SCSS (et en CSS) !
+*/
 
-  .header__nav__logo{
-      width: 25%;
-  }
+// on importe nos fichiers "abstraits" (nos fontes, nos variables, nos couleurs...)
+@import './abstract/colors';
+@import './abstract/mixins';
 
-  .header__slogan {
-      font-size: 7rem;
-  }
+// on importe les fichiers qui organisent le rendu général de nos pages (layout)
+@import './layout/global';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/main';
 
-  .main__description {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-  }
-
-  .main__description__infos {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-  }
-
-  .main__description__content {
-      width: 100%;
-  }
-
-  .main__description__comp {
-      width: 100%;
-  }
-
-  .compagnie a {
-      width: 15%;
-  }
-
-  .main__description__carrousel {
-      width: 60%;
-  }
-
-  .slider {
-      height: 30rem;
-  }
-
-  .prochain {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .carrou {
-      width: 25%;
-  }
-
-  .carrousel__img {
-     width: 55%;
-      margin-left: 4.5rem;
-  }
-
-  .date {
-      width: 60%;
-  }
-
-  .date__card {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
-
-  .galerie {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-  }
-
-  .galerie__card {
-      width: 45%;
-  }
-
-  .galerie__img {
-      width: 25%;
-  }
-
-  .compagnie__card {
-      width: 48%;
-  }
-
-  .compagnie__card__infos {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }
-
-  .compagnie__card__infos__img {
-      width: 25%;
-  }
-
-  .spectacle {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: stretch;
-      justify-content: center;
-  }
-
-  .spectacle__card {
-      width: 29%;
-  }
-
-  .date {
-      width: 90%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-  }
-
-  .avis {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-  }
-
-  .avis__card {
-      width: 25%;
-  }
-}
-
-.programme__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.programme__card__title {
-  font-size: 2.5rem;
-}
-
-.programme__card__link {
-  color: #BBCF0C;
-  font-size: 1.3rem;
-}
+// on importe les fichiers de composants
+@import './components/avis';
+@import './components/compagnie';
+@import './components/carrousel';
+@import './components/contact';
+@import './components/date';
+@import './components/galerie';
+@import './components/newsletter';
+@import './components/pagination';
+@import './components/partenaire';
+@import './components/slider';
+@import './components/spectacle';
+@import './components/sinlge-post';
+@import './components/menu';

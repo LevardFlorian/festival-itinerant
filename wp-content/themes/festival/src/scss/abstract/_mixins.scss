@@ -2,7 +2,7 @@
 
 /* Cette première mixin est un peu spéciale : on la prévoit pour les règles à faire exclusivement sur mobile, mais ces règles ne seront pas utilisée par les breakpoints supérieurs => c'est pour ça qu'on utilise max-width */
 @mixin small-only {
-    @media (max-width: 599px) {
+    @media (max-width: 430px) {
         @content;
     }
 }

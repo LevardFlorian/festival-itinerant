@@ -1,51 +1,41 @@
-.carrousel {
-  position: relative;
+.carrou {
+  @include large {
+    width: 30%;
+  }
+}
+
+.carousel {
   display: flex;
+  overflow: hidden; // on empêche le contenu qui dépasse de s'afficher
   align-items: center;
-  justify-content: space-between;
-  height: 20rem;
-  
-  &__img {
-    position: absolute;
-    top: 0;
-    left: 19px;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity .3s;
-    width: 85%;
-  }
-  
-  &__img--current {
-    opacity: 1;
-    z-index: 1;
-  }
-  
-  &__btn {
-    position: relative;
-    z-index: 2;
-    font-weight: bold;
-    color: black;
-    background-color: #BBCF0C;
-  }
-  
-  /* bonus carrousel nav */
-  &__nav {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    bottom: 0;
+  width: 98%;
+  margin: auto;
+
+  &__item {
+    // on retire la capacité de ces blocs à s'écraser pour laisser passer tout le monde sur la ligne
+    // sinon, la propiété width: 100% ne sera pas respectée
+    flex-shrink: 0;
     width: 100%;
-    z-index: 2;
   }
-  
-  &__nav-item {
-    border: 0;
-    padding: 0;
-    margin: 0.5em;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 50%;
-    background-color: white;
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+    &__button {
+      border: 1px solid #BBCF0C;
+      cursor: pointer; // le curseur doit être une main car l'élément va avoir un effet si cliqué
+      height: 1.5rem;
+      text-align: center;
+      margin: 0.5rem;
+      width: 2rem;
+
+       // traduit en css => .carousel__nav__button.active
+       &.active {
+        border: 1px solid blue;
+      }
+    }
   }
 }

@@ -78,3 +78,5 @@ const newsletter = {
             return false;
    },
 };
+
+document.addEventListener('DOMContentLoaded', newsletter.init);

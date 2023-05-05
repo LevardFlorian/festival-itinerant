@@ -16,7 +16,7 @@ const menu = {
   },
   
   toggleNav: function(event) {
-    const navMenu = document.querySelector('.main-menu')
+    const navMenu = document.querySelector('.main-menu__nav')
     if (navMenu.style.display != "block") {
       // si le texte est masqué on affiche le texte du bloc
       navMenu.style.display = "block";

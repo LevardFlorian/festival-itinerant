@@ -12,68 +12,41 @@
   font-size: 2.3rem;
   /* background-color: #BBCF0C; */
 
-&__nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
 &__nav__logo {
   width: 45%;
+  @include large {
+    width: 25%;
+  }
 }
 
 &__nav__logo img {
   width: 100%;
 }
 
-&__nav__link {
-display: none;
-}
-
 &__slogan {
 padding: 1rem;
   text-align: center;
+  @include large {
+    font-size: 7rem;
+  }
+}
 }
 
-&__nav__icon {
-  width: 90%;
-  color: black;
-}
-}
 .top-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
-  // & sert à répéter le sélecteur de la règle parente (ici ".top-bar")
-  // "&__logo" équivaut => ".top-bar__logo"
-  // on se sert de flex-grow pour fixer une proportion à utiliser pour chaque élément et conserver un alignement "rigide"
-  &__logo {
-      flex: 2;
-      font-family: "PT Sans Bold";
-      text-align: left;
-      text-transform: uppercase;
-  }
 
   &__actions {
-      flex: 1;
       text-align: center;
-
-      a {
-          text-decoration: none;
-      }
   }
 
   &__burger-button {
-      flex: 2;
       text-align: right;
 
         i {
             cursor: pointer;
         }
   }
-
-  
 }

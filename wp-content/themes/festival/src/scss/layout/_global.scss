@@ -27,3 +27,12 @@ h3 {
   padding: 0.5rem;
   color: #BBCF0C;
 }
+
+.prochain {
+  @include large {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}

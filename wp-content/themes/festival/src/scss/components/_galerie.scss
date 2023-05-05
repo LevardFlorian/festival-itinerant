@@ -1,33 +1,80 @@
-.galerie__card {
+.galerie {
+@include large {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(128, 128, 128, 0.7);
-  margin: 0.5rem;
-  border-radius: 1rem;
-  padding: 0.5rem;
-  width: 90%;
-  color:#BBCF0C;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+}
   
-  &__card img {
-    width: 95%;
-  }
-  
-  &__card p {
-    font-size: 3rem;
-    color: #BBCF0C;
-  }
-  
-  & {
+  &__card {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.7);
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 90%;
+    color:#BBCF0C;
+    @include large {
+      width: 45%;
+    }
+    
+    & img {
+      width: 90%;
+      margin: auto;
+    }
+    
+    & p {
+      font-size: 3rem;
+      margin: 1rem;
+      color: #BBCF0C;
+    }
+    
+    & {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
   }
-  
-  &__img {
-    width: 45%;
-    margin: auto;
-    padding: 0.5rem;
-  }
+    &__img {
+      width: 45%;
+      margin: auto;
+      padding: 0.5rem;
+      @include large {
+        width: 25%;
+      }
+    }
+}
+
+.galerie__card__detail {
+  width: 90%;
+  margin: auto;
+}
+
+.galerie__card__detail__title {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.galerie__card__detail__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wp-block-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.wp-block-image {
+  padding: 1rem;
 }

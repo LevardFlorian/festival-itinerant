@@ -1,11 +1,14 @@
 .partenaire {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
+
+  &__title {
+    font-size: 1.5rem;
+  }
   
   &__img {
-    width: 20%;
+    width: 90%;
     margin: auto;
     padding: 0.5rem;
   }

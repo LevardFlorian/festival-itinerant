@@ -1,0 +1,20 @@
+.programme__card {
+    @include large {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
+  .programme__card__title {
+    @include large {
+        font-size: 2.5rem;
+    }
+  }
+  
+  .programme__card__link {
+    @include large {
+        color: #BBCF0C;
+        font-size: 1.3rem;
+    }
+  }

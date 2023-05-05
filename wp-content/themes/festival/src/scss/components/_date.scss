@@ -1,16 +1,49 @@
-.date__card {
-  padding: 0.5rem;
-  border: white solid 1px;
-  border-radius: 1rem;
-  margin: 0.5rem;
+.date {
+@include large {
+  width: 60%;
+  margin: auto;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+  &__card {
+    padding: 0.5rem;
+    border: white solid 1px;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include large {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-
-  &__card__item {
-    width: calc(100vh/3);
-    text-align: center;
+    &__items {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 70%;
+      @include small-only {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+      }
+    }
+    
+    
+    &__item {
+      width: calc(100vh/3);
+      text-align: center;
+      @include small-only {
+        width: 60%;
+        text-align: start;
+      }
+    }
+    
   }
-
 }

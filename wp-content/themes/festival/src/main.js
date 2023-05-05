@@ -2,8 +2,8 @@ import 'reset-css';
 
 import './scss/main.scss';
 
-import './js/carrousel';
+import './js/carousel';
 import './js/messages';
 import './js/newsletter';
-import './js/script';
+import './js/menu';
 import './js/slider';

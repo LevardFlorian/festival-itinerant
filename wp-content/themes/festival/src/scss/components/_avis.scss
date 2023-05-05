@@ -1,15 +1,28 @@
-.avis__card__infos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 0.5rem;
-  
+.avis {
+  @include large {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   &__card {
     padding: 0.5rem;
     border: white solid 1px;
     border-radius: 1rem;
     margin: 0.5rem;
+    @include large {
+      width: 25%;
+    }
+    
+    &__infos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 0.5rem;
+      
+    }
   }
 }
 
