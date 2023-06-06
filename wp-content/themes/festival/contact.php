@@ -22,15 +22,12 @@
             <input class="contact-form__input" type="text" id="nom" placeholder="Nom" name="nom">
           </div>
           <div class="contact-form-row">
-            <label class="contact-form__label" for="source">J'ai connu ce site grâce à </label>
+            <label class="contact-form__label" for="source">Ce message est déstiné à </label>
             <select class="contact-form__input" id="source" name="source">
               <option class="contact-form__label" value="">choisir</option>
-              <option class="contact-form__label" value="fb">Facebook</option>
-              <option class="contact-form__label" value="twitter">Twitter</option>
-              <option class="contact-form__label" value="google">Google</option>
-              <option class="contact-form__label" value="bouche-a-oreilles">Bouche à oreilles</option>
-              <option class="contact-form__label" value="jpp">JT de 13h de Jean-Pierre Pernault</option>
-              <option class="contact-form__label" value="autre">Autre</option>
+              <option class="contact-form__label" value="fb">Poly'sons</option>
+              <option class="contact-form__label" value="twitter">Compagnie du Belouga</option>
+              <option class="contact-form__label" value="google">Chap'rond Fou</option>
             </select>
           </div>
         </fieldset>

@@ -9,28 +9,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="<?= get_theme_file_uri() ?>/assets/logo-festival.webp" type="image/x-icon">
   <title>Festival-itinérant</title>
-  <link rel="stylesheet" href="<?= get_theme_file_uri() ?>/src/scss/main.scss" />
+  <link rel="stylesheet" href="<?= get_theme_file_uri() ?>/dist/main.css" />
   <?php wp_head(); ?>
 </head>
 
     <body>
-    <nav class="main-menu">
-        <div class="close-button"><i class="fas fa-times"></i></div>
-        <ul>
-        <?php 
-        
-            $menuLocations = get_nav_menu_locations();
-            $headerMenuId = $menuLocations['header-menu'];
-            $menuItemList = wp_get_nav_menu_items($headerMenuId);
-            foreach ($menuItemList as $menuItem) :
-        ?>
-            <li class="main-menu__item"><a href="<?= $menuItem->url; ?>"><?= $menuItem->title; ?></a></li>
-        <?php 
-            endforeach; 
-        ?>
-            
-        </ul>
-    </nav>
+        <div class="main-menu">
+            <nav class="main-menu__nav">
+                <div class="close-button"><i class="fas fa-times"></i></div>
+                <ul class="main-menu__list">
+                <?php 
+                
+                    $menuLocations = get_nav_menu_locations();
+                    $headerMenuId = $menuLocations['header-menu'];
+                    $menuItemList = wp_get_nav_menu_items($headerMenuId);
+                    foreach ($menuItemList as $menuItem) :
+                ?>
+                    <li class="main-menu__item"><a href="<?= $menuItem->url; ?>"><?= $menuItem->title; ?></a></li>
+                <?php 
+                    endforeach; 
+                ?>
+                    
+                </ul>
+            </nav>
+        </div>
     <header class="header">
         <div class="top-bar">
             <a class="header__nav__logo" href="<?= home_url() ?>"><img src="<?= get_theme_file_uri() ?>/assets/logo-festival.webp" alt=""></a>

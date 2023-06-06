@@ -11,135 +11,27 @@
 ?>
 <main class="main">
         <h2>Avis des spectateurs</h2>
-        <section class="avis">
+        <section>
+        <?php
+        foreach (festival_get_avislist() as $post) :
+                // l'objet $post est de type WP_Post => on peut accéder à toutes ses propriétés pour dynamiser un template
+                // on peut aussi fournir ce $post en argument des template tags pour profiter de leurs fonctionnalités
+            ?>
             <div class="avis__card">
                 <div class="avis__card__infos">
                     <div>
-                        <p>Auteur</p>
-                        <p>Le : 01/01/2023</p>
+                        <p><?= get_the_author(); ?></p>
+                        <p>Le : <?= get_the_date(); ?></p>
                     </div>
                     <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                        <p><?= get_post_meta(get_the_ID(), 'rate', true); ?> / 5</p>
                     </div>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque praesentium
-                    quam
-                    quasi incidunt illum harum, quia quos velit, ullam debitis itaque. Cupiditate repellat,
-                    reprehenderit
-                    ducimus, molestiae, aspernatur corporis minima necessitatibus quasi dolore dolorem nulla error!
-                    Commodi
-                    ad
-                    similique excepturi accusantium repellat, odit quibusdam earum nemo odio asperiores minus!</p>
+                <p><?= get_the_content(); ?></p>
             </div>
-            <div class="avis__card">
-                <div class="avis__card__infos">
-                    <div>
-                        <p>Auteur</p>
-                        <p>Le : 01/01/2023</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque praesentium
-                    quam
-                    quasi incidunt illum harum, quia quos velit, ullam debitis itaque. Cupiditate repellat,
-                    reprehenderit
-                    ducimus, molestiae, aspernatur corporis minima necessitatibus quasi dolore dolorem nulla error!
-                    Commodi
-                    ad
-                    similique excepturi accusantium repellat, odit quibusdam earum nemo odio asperiores minus!</p>
-            </div>
-            <div class="avis__card">
-                <div class="avis__card__infos">
-                    <div>
-                        <p>Auteur</p>
-                        <p>Le : 01/01/2023</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque praesentium
-                    quam
-                    quasi incidunt illum harum, quia quos velit, ullam debitis itaque. Cupiditate repellat,
-                    reprehenderit
-                    ducimus, molestiae, aspernatur corporis minima necessitatibus quasi dolore dolorem nulla error!
-                    Commodi
-                    ad
-                    similique excepturi accusantium repellat, odit quibusdam earum nemo odio asperiores minus!</p>
-            </div>
-            <div class="avis__card">
-                <div class="avis__card__infos">
-                    <div>
-                        <p>Auteur</p>
-                        <p>Le : 01/01/2023</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque praesentium
-                    quam
-                    quasi incidunt illum harum, quia quos velit, ullam debitis itaque. Cupiditate repellat,
-                    reprehenderit
-                    ducimus, molestiae, aspernatur corporis minima necessitatibus quasi dolore dolorem nulla error!
-                    Commodi
-                    ad
-                    similique excepturi accusantium repellat, odit quibusdam earum nemo odio asperiores minus!</p>
-            </div>
-            <div class="avis__card">
-                <div class="avis__card__infos">
-                    <div>
-                        <p>Auteur</p>
-                        <p>Le : 01/01/2023</p>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum veritatis doloremque praesentium
-                    quam
-                    quasi incidunt illum harum, quia quos velit, ullam debitis itaque. Cupiditate repellat,
-                    reprehenderit
-                    ducimus, molestiae, aspernatur corporis minima necessitatibus quasi dolore dolorem nulla error!
-                    Commodi
-                    ad
-                    similique excepturi accusantium repellat, odit quibusdam earum nemo odio asperiores minus!</p>
-            </div>
+            <?php endforeach; ?>
+            <a class="link" href="https://festival-itinerant.fr/avisform/">Laissez votre avis</a>
         </section>
-        <a class="link" href="http://localhost/Projet-Perso/festival-itinerant/avisform/">N'hésiter pas à donner votre avis</a>
-        <nav>
-            <ul class="pagination">
-                <li class="pagination__li"><a href="javascript:void(0)"><i class="fa-solid fa-chevron-left"></i></a></li>
-                <li class="pagination__li"><a href="javascript:void(0)">1</a></li>
-                <li class="pagination__li"><a href="javascript:void(0)">2</a></li>
-                <li class="pagination__li"><a href="javascript:void(0)">3</a></li>
-                <li class="pagination__li"><a href="javascript:void(0)">4</a></li>
-                <li class="pagination__li"><a href="javascript:void(0)">5</a></li>
-                <li class="pagination__li"><a href="javascript:void(0)"><i class="fa-solid fa-chevron-right"></i></a></li>
-            </ul>
-        </nav>
     </main>
 <?php
     get_footer();

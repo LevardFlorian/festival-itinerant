@@ -72,7 +72,9 @@ if (!function_exists('festival_get_home_postlist')) :
       $args = [
           'post_status' => 'publish',
           'post_type' => 'post',
-          'posts_per_page' => 3 // on peut utiliser une valeur fixe ou laisser WP le gérer par défaut => configuré en backoffice
+          'posts_per_page' => 6,
+          'order' => 'ASC',
+            'order_by' => 'post-date'
       ];
       $homePostsQuery = new WP_Query($args);
   
@@ -89,8 +91,8 @@ if (!function_exists('festival_get_home_postlist')) :
         $args = [
             'post_status' => 'publish',
             'post_type' => 'post',
-            'order' => 'DESC',
-            'order_by' => 'date'
+            'order' => 'ASC',
+            'order_by' => 'post-date'
         ];
         $PostsQuery = new WP_Query($args);
     
@@ -103,10 +105,10 @@ if (!function_exists('festival_get_home_postlist')) :
     if (!function_exists('festival_get_galerielist')) :
         function festival_get_galerielist()
         {
-            // on prépare une WP_Query qui va récupérer les 3 derniers articles
+            
             $args = [
                 'post_status' => 'publish',
-                'post_type' => '	gt3_gallery',
+                'post_type' => 'gt3_gallery',
                 'order' => 'DESC',
                 'order_by' => 'post_title'
             ];
@@ -117,3 +119,40 @@ if (!function_exists('festival_get_home_postlist')) :
         }
         // end if exists festival_get_postlist
         endif;
+
+        if (!function_exists('festival_get_home_avislist')) :
+            function festival_get_home_avislist()
+            {
+                // on prépare une WP_Query qui va récupérer les 3 derniers articles
+                $args = [
+                    'post_status' => 'publish',
+                    'post_type' => 'avis',
+                    'posts_per_page' => 6,
+                    'order' => 'ASC',
+                    'order_by' => 'post-date'
+                ];
+                $homeAvisQuery = new WP_Query($args);
+            
+                // on renvoie la liste d'objets WP_Post récupérée
+                return $homeAvisQuery->posts;
+            }
+            // end if exists festival_get_avislist
+            endif;
+
+        if (!function_exists('festival_get_avislist')) :
+            function festival_get_avislist()
+            {
+                // on prépare une WP_Query qui va récupérer les 3 derniers articles
+                $args = [
+                    'post_status' => 'publish',
+                    'post_type' => 'avis',
+                    'order' => 'ASC',
+                    'order_by' => 'post-date'
+                ];
+                $AvisQuery = new WP_Query($args);
+            
+                // on renvoie la liste d'objets WP_Post récupérée
+                return $AvisQuery->posts;
+            }
+            // end if exists festival_get_avislist
+            endif;

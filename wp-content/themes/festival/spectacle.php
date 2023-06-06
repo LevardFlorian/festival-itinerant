@@ -14,7 +14,7 @@
         <section class="spectacle">
             <div class="spectacle__card">
                 <div class="spectacle__card__infos">
-                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/Affiche_Ragdalam.png" alt="">
+                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/Affiche_Ragdalam.png" alt="">
                     <div class="spectacle__card__infos__info">
                         <p>RAGDALAM CIRCUS</p>
                     </div>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="spectacle__card">
                     <div class="spectacle__card__infos">
-                        <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/les soeurs normandie.png" alt="">
+                        <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/Affiche Soeurs Normandie.jpg" alt="">
                         <div class="spectacle__card__infos__info">
                             <p>LES SŒURS NORMANDIE</p>
                         </div>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="spectacle__card">
                         <div class="spectacle__card__infos">
-                            <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/AFFICHE_MECHANTE.jpg" alt="">
+                            <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/AFFICHE_MECHANTE.jpg" alt="">
                             <div class="spectacle__card__infos__info">
                                 <p>MECHANTE !</p>
                             </div>
@@ -55,7 +55,7 @@
                         </div>
                     <div class="spectacle__card">
                         <div class="spectacle__card__infos">
-                            <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/New_affiche_Nougaro.png" alt="">
+                            <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/New_affiche_Nougaro.png" alt="">
                             <div class="spectacle__card__infos__info">
                                 <p> NOUGARO, L'HIRONDELLE ET NOUS</p>
                             </div>
@@ -72,7 +72,7 @@
                     </div>
                     <div class="spectacle__card">
                         <div class="spectacle__card__infos">
-                            <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/défis d'impros.png" alt="">
+                            <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/vierge defi.jpg" alt="">
                             <div class="spectacle__card__infos__info">
                                 <p>DÉFIS D'IMPROS</p>
                             </div>
@@ -85,7 +85,7 @@
                         </div>
             <div class="spectacle__card">
                 <div class="spectacle__card__infos">
-                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/fréhel la diva des faubourgs.png" alt="">
+                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/fréhel la diva des faubourgs.png" alt="">
                     <div class="spectacle__card__infos__info">
                         <p>FRÉHEL, LA DIVA DES FAUBOURGS</p>
                     </div>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="spectacle__card">
                 <div class="spectacle__card__infos">
-                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/affiche_paris-cigale.jpg" alt="">
+                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/affiche_Paris_Cigale.jpg" alt="">
                     <div class="spectacle__card__infos__info">
                         <p>PARIS CIGALE</p>
                     </div>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="spectacle__card">
                 <div class="spectacle__card__infos">
-                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/affiche-moliere.jpg" alt="">
+                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/affiche-moliere.jpg" alt="">
                     <div class="spectacle__card__infos__info">
                         <p>Molière Place des disputes</p>
                     </div>
@@ -121,7 +121,7 @@
                 </div>
                 <div class="spectacle__card">
                 <div class="spectacle__card__infos">
-                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/affiche_tour_d-horizon.png" alt="">
+                    <img class="spectacle__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/spectacle/affiche_Tour_d'horizon.jpg" alt="">
                     <div class="spectacle__card__infos__info">
                         <p>TOUR D’HORIZON</p>
                     </div>

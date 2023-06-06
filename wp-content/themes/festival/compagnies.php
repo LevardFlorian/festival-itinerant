@@ -11,7 +11,7 @@
     <section class="compagnie">
       <div class="compagnie__card">
         <div class="compagnie__card__infos">
-          <img class="compagnie__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/compagnie/_logo belouga.svg" alt="">
+          <img class="compagnie__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/compagnie/logo_belouga.webp" alt="">
           <div class="compagnie__card__infos__info">
             <h2>LA COMPAGNIE DU BÉLOUGA</h2>
           </div>
@@ -33,7 +33,7 @@
       </div>
       <div class="compagnie__card">
         <div class="compagnie__card__infos">
-          <img class="compagnie__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/compagnie/_logo chap rond fou.svg" alt="">
+          <img class="compagnie__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/compagnie/logo_chap_rond_fou.webp" alt="">
           <div class="compagnie__card__infos__info">
             <h2>LE CHAP ROND FOU</h2>
           </div>
@@ -44,7 +44,7 @@
       </div>
       <div class="compagnie__card">
         <div class="compagnie__card__infos">
-          <img class="compagnie__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/compagnie/_logo poly'sons.svg" alt="">
+          <img class="compagnie__card__infos__img" src="<?= get_theme_file_uri() ?>/assets/compagnie/logo_poly'sons.webp" alt="">
           <div class="compagnie__card__infos__info">
             <h2>LA COMPAGNIE POLY'SONS</h2>
           </div>

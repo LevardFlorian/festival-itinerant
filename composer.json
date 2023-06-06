@@ -10,6 +10,10 @@
             "composer/installers": true
         }
     },
+    "scripts": {
+        "autoload": "cd wp-content/plugins/festival && composer dump-autoload",
+        "reactivate-plugin": "wp plugin deactivate festival && wp plugin activate festival"
+    },
     "repositories":[
         {
             "type":"composer",

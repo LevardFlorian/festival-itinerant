@@ -30,12 +30,7 @@
             <a class="footer__link" id="newsletter" href="">Suivez-nous</a>
         </div>
     </footer>
-    <script src="<?= get_theme_file_uri() ?>/src/js/script.js"></script>
-    <script src="<?= get_theme_file_uri() ?>/src/js/carrousel.js"></script>
-    <script src="<?= get_theme_file_uri() ?>/src/js/messages.js"></script>
-    <script src="<?= get_theme_file_uri() ?>/src/js/newsletter.js"></script>
-    <script src="<?= get_theme_file_uri() ?>/src/js/slider.js"></script>
-    <script src="<?= get_theme_file_uri() ?>/src/js/menu.js"></script>
+
   <?php wp_footer(); ?>
 </body>
 
