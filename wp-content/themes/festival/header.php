@@ -37,6 +37,8 @@
         <div class="top-bar">
             <a class="header__nav__logo" href="<?= home_url() ?>"><img src="<?= get_theme_file_uri() ?>/assets/logo-festival.webp" alt=""></a>
             <div class="top-bar__actions">
+            <a class="header__network__link" href="https://www.facebook.com/profile.php?id=100072422051797"><i
+                    class="fa-brands fa-facebook"></i>Suivez-nous!</a>
             <p class="header__slogan">C'est chez vous qu'il passe !</p>
             </div>
             <div class="top-bar__burger-button">

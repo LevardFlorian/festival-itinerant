@@ -3,15 +3,15 @@
 <main class="main">
     <div class="main__description">
         <div class="main__description__infos">
-            <section class="main__description__content">
+        <section class="main__description__content">
                 <h2>Qui sommes nous?</h2>
-                <p>Un chapiteau sillonne les routes de nos campagnes et fait plusieurs escales dans différentes
-                    communes. A chaque escale, une semaine de spectacles, d'initiations artistiques, de rencontres,
-                    d’échanges et de valorisation des talents locaux. Venez-voir les comédiens, les magiciens qui
-                    arrivent… <br>
-                    L’idée est donc de proposer un projet culturel aux communes rurales qui n’ont ni les moyens ni les
-                    structures pour programmer des spectacles de proximité. La philosophie du projet consiste aussi à
-                    impliquer les habitants dans son organisation et sa programmation.
+                <p>Des passionnés des <strong>arts vivants</strong> !<br>
+<strong>Pascal Vidaillac</strong>, <strong>chanteur</strong>, <strong>comédien</strong>, <strong>auteur</strong>, imagine un chapiteau qui sillonne les routes de campagnes et va à la rencontre des habitants, des familles et des associations locales.<br>
+Il en parle à <strong>Taïra Borée</strong>, <strong>comédienne</strong>, <strong>autrice</strong>, <strong>metteuse en scène</strong>. Tous les deux s'emballent et décident de mettre leurs compétences artistiques au bénéfice du projet.<br>
+Ils impliquent le collectif du <strong>Chap'Rond Fou</strong> et le <strong>FESTIVAL ITINÉRANT</strong> est né !<br>
+Au final, l'opération permet de proposer à chaque escale une semaine de <strong>spectacles</strong>, d'<strong>initiations artistiques</strong>, de <strong>rencontres</strong>, <strong>d’échanges</strong> et de <strong>valorisation des talents locaux</strong>.<br>
+Viens voir les <strong>comédiens</strong>, les <strong>magiciens</strong>, les <strong>musiciens</strong> qui arrivent…<br>
+Il s'agit donc d'un projet culturel inclusif pour les territoires qui désirent programmer un évènement de proximité, où tout le monde apporte sa contribution à son organisation et à sa programmation.
                 </p>
             </section>
             <section class="main__description__comp">
@@ -77,6 +77,7 @@
     </div>
     <section>
         <h2>Avis des spectateurs</h2>
+        <div class="avis">
         <?php
         foreach (festival_get_home_avislist() as $post) :
                 // l'objet $post est de type WP_Post => on peut accéder à toutes ses propriétés pour dynamiser un template
@@ -95,6 +96,7 @@
                 <p><?= get_the_content(); ?></p>
             </div>
             <?php endforeach; ?>
+            </div>
         <a class="link" href="<?= home_url() ?>/avis/">Voir tous les avis</a>
     </section>
 </main>

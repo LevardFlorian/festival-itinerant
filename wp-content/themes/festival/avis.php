@@ -12,6 +12,7 @@
 <main class="main">
         <h2>Avis des spectateurs</h2>
         <section>
+        <div class="avis">
         <?php
         foreach (festival_get_avislist() as $post) :
                 // l'objet $post est de type WP_Post => on peut accéder à toutes ses propriétés pour dynamiser un template
@@ -20,16 +21,16 @@
             <div class="avis__card">
                 <div class="avis__card__infos">
                     <div>
-                        <p><?= get_the_author(); ?></p>
-                        <p>Le : <?= get_the_date(); ?></p>
+                        <p>Le : <?= get_the_date('d-m-Y'); ?> par <?= get_the_title(); ?></p>
                     </div>
                     <div>
-                        <p><?= get_post_meta(get_the_ID(), 'rate', true); ?> / 5</p>
+                        <p>note : <?= get_post_meta(get_the_ID(), 'post_rate', true); ?> / 5</p>
                     </div>
                 </div>
                 <p><?= get_the_content(); ?></p>
             </div>
             <?php endforeach; ?>
+            </div>
             <a class="link" href="https://festival-itinerant.fr/avisform/">Laissez votre avis</a>
         </section>
     </main>

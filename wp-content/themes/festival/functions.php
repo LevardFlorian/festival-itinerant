@@ -74,7 +74,7 @@ if (!function_exists('festival_get_home_postlist')) :
           'post_type' => 'post',
           'posts_per_page' => 6,
           'order' => 'ASC',
-            'order_by' => 'post-date'
+            'order_by' => 'date_de_debut'
       ];
       $homePostsQuery = new WP_Query($args);
   
@@ -92,7 +92,7 @@ if (!function_exists('festival_get_home_postlist')) :
             'post_status' => 'publish',
             'post_type' => 'post',
             'order' => 'ASC',
-            'order_by' => 'post-date'
+            'order_by' => 'date_de_debut'
         ];
         $PostsQuery = new WP_Query($args);
     
@@ -127,7 +127,7 @@ if (!function_exists('festival_get_home_postlist')) :
                 $args = [
                     'post_status' => 'publish',
                     'post_type' => 'avis',
-                    'posts_per_page' => 6,
+                    'posts_per_page' => 3,
                     'order' => 'ASC',
                     'order_by' => 'post-date'
                 ];
