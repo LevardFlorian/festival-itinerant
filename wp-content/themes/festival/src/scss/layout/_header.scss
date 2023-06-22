@@ -3,33 +3,49 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family:'Qwitcher Grypen', cursive ;
+
   font-size: 2.3rem;
   /* background-color: #BBCF0C; */
 
-&__nav__logo {
-  width: 45%;
-  @include large {
-    width: 25%;
-  }
-}
+  &__nav__logo {
+    width: 45%;
 
-&__nav__logo img {
-  width: 100%;
-}
-
-&__slogan {
-padding: 1rem;
-  text-align: center;
-  @include large {
-    font-size: 7rem;
+    @include large {
+      width: 25%;
+    }
   }
-}
+
+  &__nav__logo img {
+    width: 100%;
+  }
+
+  &__slogan {
+    padding: 2rem;
+    font-family: 'Qwitcher Grypen', cursive;
+    text-align: center;
+
+    @include large {
+      font-size: 7rem;
+    }
+  }
+
+  &__network__link {
+    display: flex;
+    justify-content: flex-end;
+    color: $black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 1.5rem;
+
+    & i {
+      padding-right: 0.2rem;
+    }
+  }
 }
 
 .top-bar {
@@ -39,14 +55,14 @@ padding: 1rem;
   justify-content: space-between;
 
   &__actions {
-      text-align: center;
+    text-align: center;
   }
 
   &__burger-button {
-      text-align: right;
+    text-align: right;
 
-        i {
-            cursor: pointer;
-        }
+    i {
+      cursor: pointer;
+    }
   }
 }

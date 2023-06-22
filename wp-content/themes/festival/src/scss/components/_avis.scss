@@ -4,40 +4,68 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
   }
+
   &__card {
     padding: 0.5rem;
     border: white solid 1px;
     border-radius: 1rem;
     margin: 0.5rem;
+
     @include large {
       width: 25%;
     }
-    
+
     &__infos {
       display: flex;
-      flex-direction: row;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
       justify-content: space-between;
       padding-bottom: 0.5rem;
-      
+
     }
   }
 }
 
-.avis-form__button {
+.avis-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+ &__option{
   background-color: #BBCF0C;
   border-radius: 1rem;
   padding: 0.7rem;
   color: black;
-  margin: 2rem;
-  
+  width: 90%;
+
+  @include large {
+    width: 60%;
+  }
+ }
+
   &__input {
     background-color: #BBCF0C;
     border-radius: 1rem;
     padding: 0.7rem;
     color: black;
     width: 90%;
+
+    @include large {
+      width: 60%;
+    }
+
+    &__buton {
+      background-color: #BBCF0C;
+      border-radius: 1rem;
+      padding: 0.7rem;
+      color: black;
+      margin: 3rem;
+      width: 90%;
+      @include large {
+        width: 20%;
+      }
+    }
   }
 }
