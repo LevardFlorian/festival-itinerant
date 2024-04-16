@@ -13,8 +13,8 @@ background-color:$blue;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around ;
-    align-items: center;
+    justify-content:space-between ;
+    align-items: stretch;
     width: 100%;
   }
 }
@@ -23,7 +23,7 @@ background-color:$blue;
   @include large {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 35%;
   }
 }
 
